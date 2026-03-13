@@ -1,0 +1,51 @@
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+
+
+z-index: 101;
+  background-color: var(--primary-color);
+
+  overflow-x: hidden;
+  transition: 0.3s;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  
+  &.open {
+    width: 100%;
+  }
+
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  line-height: 7rem;
+  text-align: center;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1%;
+  right: 5%;
+  font-size: 3rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.openBtn {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.358);
+
+}
+
+}
